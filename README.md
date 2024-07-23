@@ -53,7 +53,7 @@ cd CLIPS
 
 ### Hosting the Project
 
-1. Follow the instructions in 
+1. Follow the instructions in [1 - REDCap Survey](https://github.com/kbjohnson-penn/CLIPS/tree/main/1%20-%20REDCap%20Survey) to host our template survey.
 
 2. Preprocessing Videos:
     - Place your videos in the same directory as [split_videos.sh](https://github.com/kbjohnson-penn/CLIPS/blob/main/2%20-%20Video%20Preprocessing/split_videos.sh)
@@ -78,9 +78,9 @@ We welcome contributions from the community, especially for expanding the list o
 
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License. You must give appropriate credit, provide a link to the license, and indicate if changes were made. See the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) for details.
+This project is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. You must give appropriate credit, provide a link to the license, and indicate if changes were made. See the [LICENSE](https://github.com/kbjohnson-penn/CLIPS/blob/main/LICENSE) file for details.
 
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Acknowledgements
 

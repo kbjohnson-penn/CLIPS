@@ -56,15 +56,15 @@ cd CLIPS
 1. Follow the instructions in 
 
 2. Preprocessing Videos:
-- Place your videos in the same directory as [split_videos.sh](https://github.com/kbjohnson-penn/CLIPS/blob/main/2%20-%20Video%20Preprocessing/split_videos.sh)
-- Ensure the script has execution, read, and write permissions:
-    ```
-    chmod +rwx split_videos.sh
-    ```
-- Run the script to split your videos into one-minute segments:
-    ```
-    ./split_videos.sh
-    ```
+    - Place your videos in the same directory as [split_videos.sh](https://github.com/kbjohnson-penn/CLIPS/blob/main/2%20-%20Video%20Preprocessing/split_videos.sh)
+    - Ensure the script has execution, read, and write permissions:
+        ```
+        chmod +rwx split_videos.sh
+        ```
+    - Run the script to split your videos into one-minute segments:
+        ```
+        ./split_videos.sh
+        ```
 
 3. Generate a CSV file with all your video names and URLs (this step is [CDN-specific](https://github.com/kbjohnson-penn/CLIPS/tree/main/3%20-%20Accessible%20Video%20URLs%20CSV%20Generation)).
 

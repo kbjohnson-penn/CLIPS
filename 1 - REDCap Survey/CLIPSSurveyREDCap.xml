@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="CLIPS Survey - REDCapCon" AsOfDateTime="2024-07-23T00:55:36" CreationDateTime="2024-07-23T00:55:36" SourceSystem="REDCap" SourceSystemVersion="14.3.13">
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="CLIPS Survey - REDCapCon" AsOfDateTime="2024-08-07T02:35:52" CreationDateTime="2024-08-07T02:35:52" SourceSystem="REDCap" SourceSystemVersion="14.3.13">
 <Study OID="Project.CLIPSSurveyREDCapCon">
 <GlobalVariables>
 	<StudyName>CLIPS Survey - REDCapCon</StudyName>
@@ -28,7 +28,7 @@
 	<redcap:ProtectedEmailModeTrigger>ALL</redcap:ProtectedEmailModeTrigger>
 	<redcap:ProtectedEmailModeLogo></redcap:ProtectedEmailModeLogo>
 </GlobalVariables>
-<MetaDataVersion OID="Metadata.CLIPSSurveyREDCapCon_2024-07-23_0055" Name="CLIPS Survey - REDCapCon" redcap:RecordIdField="record_id">
+<MetaDataVersion OID="Metadata.CLIPSSurveyREDCapCon_2024-08-07_0235" Name="CLIPS Survey - REDCapCon" redcap:RecordIdField="record_id">
 	<FormDef OID="Form.tutorial" Name="Tutorial" Repeating="No" redcap:FormName="tutorial">
 		<ItemGroupRef ItemGroupOID="tutorial.record_id" Mandatory="No"/>
 		<ItemGroupRef ItemGroupOID="tutorial.tutorial_timestamp" Mandatory="No"/>
@@ -823,75 +823,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v1" Name="emotion1_v1" DataType="text" Length="999" redcap:Variable="emotion1_v1" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v1___1" Name="emotionhow1_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; OR [emotion1_v1] != &quot;None&quot; OR [emotion1_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v1___1" Name="emotionhow1_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; AND [emotion1_v1] != &quot;None&quot; AND [emotion1_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v1___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v1___2" Name="emotionhow1_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; OR [emotion1_v1] != &quot;None&quot; OR [emotion1_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v1___2" Name="emotionhow1_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; AND [emotion1_v1] != &quot;None&quot; AND [emotion1_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v1___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v1___3" Name="emotionhow1_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; OR [emotion1_v1] != &quot;None&quot; OR [emotion1_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v1___3" Name="emotionhow1_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; AND [emotion1_v1] != &quot;None&quot; AND [emotion1_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v1___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v1" Name="emotion2_v1" DataType="text" Length="999" redcap:Variable="emotion2_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; OR [emotion1_v1] != &quot;None&quot; OR [emotion1_v1] != &quot;none&quot;">
+	<ItemDef OID="emotion2_v1" Name="emotion2_v1" DataType="text" Length="999" redcap:Variable="emotion2_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v1] != &quot;&quot; AND [emotion1_v1] != &quot;None&quot; AND [emotion1_v1] != &quot;none&quot;">
 		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v1___1" Name="emotionhow2_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; OR [emotion2_v1] != &quot;None&quot; OR [emotion2_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v1___1" Name="emotionhow2_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; AND [emotion2_v1] != &quot;None&quot; AND [emotion2_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v1___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v1___2" Name="emotionhow2_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; OR [emotion2_v1] != &quot;None&quot; OR [emotion2_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v1___2" Name="emotionhow2_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; AND [emotion2_v1] != &quot;None&quot; AND [emotion2_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v1___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v1___3" Name="emotionhow2_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; OR [emotion2_v1] != &quot;None&quot; OR [emotion2_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v1___3" Name="emotionhow2_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; AND [emotion2_v1] != &quot;None&quot; AND [emotion2_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v1___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v1" Name="emotion3_v1" DataType="text" Length="999" redcap:Variable="emotion3_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; OR [emotion2_v1] != &quot;None&quot; OR [emotion2_v1] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v1" Name="emotion3_v1" DataType="text" Length="999" redcap:Variable="emotion3_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v1] != &quot;&quot; AND [emotion2_v1] != &quot;None&quot; AND [emotion2_v1] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v1___1" Name="emotionhow3_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; OR [emotion3_v1] != &quot;None&quot; OR [emotion3_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v1___1" Name="emotionhow3_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; AND [emotion3_v1] != &quot;None&quot; AND [emotion3_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v1___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v1___2" Name="emotionhow3_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; OR [emotion3_v1] != &quot;None&quot; OR [emotion3_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v1___2" Name="emotionhow3_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; AND [emotion3_v1] != &quot;None&quot; AND [emotion3_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v1___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v1___3" Name="emotionhow3_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; OR [emotion3_v1] != &quot;None&quot; OR [emotion3_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v1___3" Name="emotionhow3_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; AND [emotion3_v1] != &quot;None&quot; AND [emotion3_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v1___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v1" Name="emotion4_v1" DataType="text" Length="999" redcap:Variable="emotion4_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; OR [emotion3_v1] != &quot;None&quot; OR [emotion3_v1] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v1" Name="emotion4_v1" DataType="text" Length="999" redcap:Variable="emotion4_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v1] != &quot;&quot; AND [emotion3_v1] != &quot;None&quot; AND [emotion3_v1] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v1___1" Name="emotionhow4_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; OR [emotion4_v1] != &quot;None&quot; OR [emotion4_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v1___1" Name="emotionhow4_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; AND [emotion4_v1] != &quot;None&quot; AND [emotion4_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v1___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v1___2" Name="emotionhow4_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; OR [emotion4_v1] != &quot;None&quot; OR [emotion4_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v1___2" Name="emotionhow4_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; AND [emotion4_v1] != &quot;None&quot; AND [emotion4_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v1___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v1___3" Name="emotionhow4_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; OR [emotion4_v1] != &quot;None&quot; OR [emotion4_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v1___3" Name="emotionhow4_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; AND [emotion4_v1] != &quot;None&quot; AND [emotion4_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v1___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v1" Name="emotion5_v1" DataType="text" Length="999" redcap:Variable="emotion5_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; OR [emotion4_v1] != &quot;None&quot; OR [emotion4_v1] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v1" Name="emotion5_v1" DataType="text" Length="999" redcap:Variable="emotion5_v1" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v1] != &quot;&quot; AND [emotion4_v1] != &quot;None&quot; AND [emotion4_v1] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v1___1" Name="emotionhow5_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; OR [emotion5_v1] != &quot;None&quot; OR [emotion5_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v1___1" Name="emotionhow5_v1___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; AND [emotion5_v1] != &quot;None&quot; AND [emotion5_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v1___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v1___2" Name="emotionhow5_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; OR [emotion5_v1] != &quot;None&quot; OR [emotion5_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v1___2" Name="emotionhow5_v1___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; AND [emotion5_v1] != &quot;None&quot; AND [emotion5_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v1___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v1___3" Name="emotionhow5_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; OR [emotion5_v1] != &quot;None&quot; OR [emotion5_v1] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v1___3" Name="emotionhow5_v1___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v1" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v1] != &quot;&quot; AND [emotion5_v1] != &quot;None&quot; AND [emotion5_v1] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v1]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v1___3.choices"/>
 	</ItemDef>
@@ -1034,75 +1034,75 @@ Once the video is complete, click &quot;Close&quot; to exit the pop-up followed 
 	<ItemDef OID="emotion1_v2" Name="emotion1_v2" DataType="text" Length="999" redcap:Variable="emotion1_v2" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v2___1" Name="emotionhow1_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; OR [emotion1_v2] != &quot;None&quot; OR [emotion1_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v2___1" Name="emotionhow1_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; AND [emotion1_v2] != &quot;None&quot; AND [emotion1_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v2___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v2___2" Name="emotionhow1_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; OR [emotion1_v2] != &quot;None&quot; OR [emotion1_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v2___2" Name="emotionhow1_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; AND [emotion1_v2] != &quot;None&quot; AND [emotion1_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v2___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v2___3" Name="emotionhow1_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; OR [emotion1_v2] != &quot;None&quot; OR [emotion1_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v2___3" Name="emotionhow1_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; AND [emotion1_v2] != &quot;None&quot; AND [emotion1_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v2___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v2" Name="emotion2_v2" DataType="text" Length="999" redcap:Variable="emotion2_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; OR [emotion1_v2] != &quot;None&quot; OR [emotion1_v2] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v2" Name="emotion2_v2" DataType="text" Length="999" redcap:Variable="emotion2_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v2] != &quot;&quot; AND [emotion1_v2] != &quot;None&quot; AND [emotion1_v2] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v2___1" Name="emotionhow2_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; OR [emotion2_v2] != &quot;None&quot; OR [emotion2_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v2___1" Name="emotionhow2_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; AND [emotion2_v2] != &quot;None&quot; AND [emotion2_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v2___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v2___2" Name="emotionhow2_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; OR [emotion2_v2] != &quot;None&quot; OR [emotion2_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v2___2" Name="emotionhow2_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; AND [emotion2_v2] != &quot;None&quot; AND [emotion2_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v2___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v2___3" Name="emotionhow2_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; OR [emotion2_v2] != &quot;None&quot; OR [emotion2_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v2___3" Name="emotionhow2_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; AND [emotion2_v2] != &quot;None&quot; AND [emotion2_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v2___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v2" Name="emotion3_v2" DataType="text" Length="999" redcap:Variable="emotion3_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; OR [emotion2_v2] != &quot;None&quot; OR [emotion2_v2] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v2" Name="emotion3_v2" DataType="text" Length="999" redcap:Variable="emotion3_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v2] != &quot;&quot; AND [emotion2_v2] != &quot;None&quot; AND [emotion2_v2] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v2___1" Name="emotionhow3_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; OR [emotion3_v2] != &quot;None&quot; OR [emotion3_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v2___1" Name="emotionhow3_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; AND [emotion3_v2] != &quot;None&quot; AND [emotion3_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v2___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v2___2" Name="emotionhow3_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; OR [emotion3_v2] != &quot;None&quot; OR [emotion3_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v2___2" Name="emotionhow3_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; AND [emotion3_v2] != &quot;None&quot; AND [emotion3_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v2___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v2___3" Name="emotionhow3_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; OR [emotion3_v2] != &quot;None&quot; OR [emotion3_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v2___3" Name="emotionhow3_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; AND [emotion3_v2] != &quot;None&quot; AND [emotion3_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v2___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v2" Name="emotion4_v2" DataType="text" Length="999" redcap:Variable="emotion4_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; OR [emotion3_v2] != &quot;None&quot; OR [emotion3_v2] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v2" Name="emotion4_v2" DataType="text" Length="999" redcap:Variable="emotion4_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v2] != &quot;&quot; AND [emotion3_v2] != &quot;None&quot; AND [emotion3_v2] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v2___1" Name="emotionhow4_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; OR [emotion4_v2] != &quot;None&quot; OR [emotion4_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v2___1" Name="emotionhow4_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; AND [emotion4_v2] != &quot;None&quot; AND [emotion4_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v2___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v2___2" Name="emotionhow4_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; OR [emotion4_v2] != &quot;None&quot; OR [emotion4_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v2___2" Name="emotionhow4_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; AND [emotion4_v2] != &quot;None&quot; AND [emotion4_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v2___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v2___3" Name="emotionhow4_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; OR [emotion4_v2] != &quot;None&quot; OR [emotion4_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v2___3" Name="emotionhow4_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; AND [emotion4_v2] != &quot;None&quot; AND [emotion4_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v2___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v2" Name="emotion5_v2" DataType="text" Length="999" redcap:Variable="emotion5_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; OR [emotion4_v2] != &quot;None&quot; OR [emotion4_v2] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v2" Name="emotion5_v2" DataType="text" Length="999" redcap:Variable="emotion5_v2" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v2] != &quot;&quot; AND [emotion4_v2] != &quot;None&quot; AND [emotion4_v2] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v2___1" Name="emotionhow5_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; OR [emotion5_v2] != &quot;None&quot; OR [emotion5_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v2___1" Name="emotionhow5_v2___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; AND [emotion5_v2] != &quot;None&quot; AND [emotion5_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v2___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v2___2" Name="emotionhow5_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; OR [emotion5_v2] != &quot;None&quot; OR [emotion5_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v2___2" Name="emotionhow5_v2___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; AND [emotion5_v2] != &quot;None&quot; AND [emotion5_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v2___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v2___3" Name="emotionhow5_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; OR [emotion5_v2] != &quot;None&quot; OR [emotion5_v2] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v2___3" Name="emotionhow5_v2___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v2" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v2] != &quot;&quot; AND [emotion5_v2] != &quot;None&quot; AND [emotion5_v2] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v2]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v2___3.choices"/>
 	</ItemDef>
@@ -1243,75 +1243,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v3" Name="emotion1_v3" DataType="text" Length="999" redcap:Variable="emotion1_v3" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v3___1" Name="emotionhow1_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; OR [emotion1_v3] != &quot;None&quot; OR [emotion1_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v3___1" Name="emotionhow1_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; AND [emotion1_v3] != &quot;None&quot; AND [emotion1_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v3___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v3___2" Name="emotionhow1_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; OR [emotion1_v3] != &quot;None&quot; OR [emotion1_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v3___2" Name="emotionhow1_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; AND [emotion1_v3] != &quot;None&quot; AND [emotion1_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v3___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v3___3" Name="emotionhow1_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; OR [emotion1_v3] != &quot;None&quot; OR [emotion1_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v3___3" Name="emotionhow1_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; AND [emotion1_v3] != &quot;None&quot; AND [emotion1_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v3___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v3" Name="emotion2_v3" DataType="text" Length="999" redcap:Variable="emotion2_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; OR [emotion1_v3] != &quot;None&quot; OR [emotion1_v3] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v3" Name="emotion2_v3" DataType="text" Length="999" redcap:Variable="emotion2_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v3] != &quot;&quot; AND [emotion1_v3] != &quot;None&quot; AND [emotion1_v3] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v3___1" Name="emotionhow2_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; OR [emotion2_v3] != &quot;None&quot; OR [emotion2_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v3___1" Name="emotionhow2_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; AND [emotion2_v3] != &quot;None&quot; AND [emotion2_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v3___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v3___2" Name="emotionhow2_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; OR [emotion2_v3] != &quot;None&quot; OR [emotion2_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v3___2" Name="emotionhow2_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; AND [emotion2_v3] != &quot;None&quot; AND [emotion2_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v3___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v3___3" Name="emotionhow2_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; OR [emotion2_v3] != &quot;None&quot; OR [emotion2_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v3___3" Name="emotionhow2_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; AND [emotion2_v3] != &quot;None&quot; AND [emotion2_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v3___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v3" Name="emotion3_v3" DataType="text" Length="999" redcap:Variable="emotion3_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; OR [emotion2_v3] != &quot;None&quot; OR [emotion2_v3] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v3" Name="emotion3_v3" DataType="text" Length="999" redcap:Variable="emotion3_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v3] != &quot;&quot; AND [emotion2_v3] != &quot;None&quot; AND [emotion2_v3] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v3___1" Name="emotionhow3_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; OR [emotion3_v3] != &quot;None&quot; OR [emotion3_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v3___1" Name="emotionhow3_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; AND [emotion3_v3] != &quot;None&quot; AND [emotion3_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v3___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v3___2" Name="emotionhow3_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; OR [emotion3_v3] != &quot;None&quot; OR [emotion3_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v3___2" Name="emotionhow3_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; AND [emotion3_v3] != &quot;None&quot; AND [emotion3_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v3___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v3___3" Name="emotionhow3_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; OR [emotion3_v3] != &quot;None&quot; OR [emotion3_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v3___3" Name="emotionhow3_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; AND [emotion3_v3] != &quot;None&quot; AND [emotion3_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v3___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v3" Name="emotion4_v3" DataType="text" Length="999" redcap:Variable="emotion4_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; OR [emotion3_v3] != &quot;None&quot; OR [emotion3_v3] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v3" Name="emotion4_v3" DataType="text" Length="999" redcap:Variable="emotion4_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v3] != &quot;&quot; AND [emotion3_v3] != &quot;None&quot; AND [emotion3_v3] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v3___1" Name="emotionhow4_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; OR [emotion4_v3] != &quot;None&quot; OR [emotion4_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v3___1" Name="emotionhow4_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; AND [emotion4_v3] != &quot;None&quot; AND [emotion4_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v3___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v3___2" Name="emotionhow4_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; OR [emotion4_v3] != &quot;None&quot; OR [emotion4_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v3___2" Name="emotionhow4_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; AND [emotion4_v3] != &quot;None&quot; AND [emotion4_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v3___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v3___3" Name="emotionhow4_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; OR [emotion4_v3] != &quot;None&quot; OR [emotion4_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v3___3" Name="emotionhow4_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; AND [emotion4_v3] != &quot;None&quot; AND [emotion4_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v3___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v3" Name="emotion5_v3" DataType="text" Length="999" redcap:Variable="emotion5_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; OR [emotion4_v3] != &quot;None&quot; OR [emotion4_v3] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v3" Name="emotion5_v3" DataType="text" Length="999" redcap:Variable="emotion5_v3" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v3] != &quot;&quot; AND [emotion4_v3] != &quot;None&quot; AND [emotion4_v3] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v3___1" Name="emotionhow5_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; OR [emotion5_v3] != &quot;None&quot; OR [emotion5_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v3___1" Name="emotionhow5_v3___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; AND [emotion5_v3] != &quot;None&quot; AND [emotion5_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v3___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v3___2" Name="emotionhow5_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; OR [emotion5_v3] != &quot;None&quot; OR [emotion5_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v3___2" Name="emotionhow5_v3___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; AND [emotion5_v3] != &quot;None&quot; AND [emotion5_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v3___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v3___3" Name="emotionhow5_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; OR [emotion5_v3] != &quot;None&quot; OR [emotion5_v3] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v3___3" Name="emotionhow5_v3___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v3" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v3] != &quot;&quot; AND [emotion5_v3] != &quot;None&quot; AND [emotion5_v3] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v3]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v3___3.choices"/>
 	</ItemDef>
@@ -1452,75 +1452,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v4" Name="emotion1_v4" DataType="text" Length="999" redcap:Variable="emotion1_v4" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v4___1" Name="emotionhow1_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; OR [emotion1_v4] != &quot;None&quot; OR [emotion1_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v4___1" Name="emotionhow1_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; AND [emotion1_v4] != &quot;None&quot; AND [emotion1_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v4___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v4___2" Name="emotionhow1_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; OR [emotion1_v4] != &quot;None&quot; OR [emotion1_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v4___2" Name="emotionhow1_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; AND [emotion1_v4] != &quot;None&quot; AND [emotion1_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v4___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v4___3" Name="emotionhow1_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; OR [emotion1_v4] != &quot;None&quot; OR [emotion1_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v4___3" Name="emotionhow1_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; AND [emotion1_v4] != &quot;None&quot; AND [emotion1_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v4___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v4" Name="emotion2_v4" DataType="text" Length="999" redcap:Variable="emotion2_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; OR [emotion1_v4] != &quot;None&quot; OR [emotion1_v4] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v4" Name="emotion2_v4" DataType="text" Length="999" redcap:Variable="emotion2_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v4] != &quot;&quot; AND [emotion1_v4] != &quot;None&quot; AND [emotion1_v4] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v4___1" Name="emotionhow2_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; OR [emotion2_v4] != &quot;None&quot; OR [emotion2_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v4___1" Name="emotionhow2_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; AND [emotion2_v4] != &quot;None&quot; AND [emotion2_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v4___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v4___2" Name="emotionhow2_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; OR [emotion2_v4] != &quot;None&quot; OR [emotion2_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v4___2" Name="emotionhow2_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; AND [emotion2_v4] != &quot;None&quot; AND [emotion2_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v4___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v4___3" Name="emotionhow2_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; OR [emotion2_v4] != &quot;None&quot; OR [emotion2_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v4___3" Name="emotionhow2_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; AND [emotion2_v4] != &quot;None&quot; AND [emotion2_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v4___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v4" Name="emotion3_v4" DataType="text" Length="999" redcap:Variable="emotion3_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; OR [emotion2_v4] != &quot;None&quot; OR [emotion2_v4] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v4" Name="emotion3_v4" DataType="text" Length="999" redcap:Variable="emotion3_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v4] != &quot;&quot; AND [emotion2_v4] != &quot;None&quot; AND [emotion2_v4] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v4___1" Name="emotionhow3_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; OR [emotion3_v4] != &quot;None&quot; OR [emotion3_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v4___1" Name="emotionhow3_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; AND [emotion3_v4] != &quot;None&quot; AND [emotion3_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v4___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v4___2" Name="emotionhow3_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; OR [emotion3_v4] != &quot;None&quot; OR [emotion3_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v4___2" Name="emotionhow3_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; AND [emotion3_v4] != &quot;None&quot; AND [emotion3_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v4___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v4___3" Name="emotionhow3_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; OR [emotion3_v4] != &quot;None&quot; OR [emotion3_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v4___3" Name="emotionhow3_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; AND [emotion3_v4] != &quot;None&quot; AND [emotion3_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v4___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v4" Name="emotion4_v4" DataType="text" Length="999" redcap:Variable="emotion4_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; OR [emotion3_v4] != &quot;None&quot; OR [emotion3_v4] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v4" Name="emotion4_v4" DataType="text" Length="999" redcap:Variable="emotion4_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v4] != &quot;&quot; AND [emotion3_v4] != &quot;None&quot; AND [emotion3_v4] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v4___1" Name="emotionhow4_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; OR [emotion4_v4] != &quot;None&quot; OR [emotion4_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v4___1" Name="emotionhow4_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; AND [emotion4_v4] != &quot;None&quot; AND [emotion4_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v4___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v4___2" Name="emotionhow4_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; OR [emotion4_v4] != &quot;None&quot; OR [emotion4_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v4___2" Name="emotionhow4_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; AND [emotion4_v4] != &quot;None&quot; AND [emotion4_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v4___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v4___3" Name="emotionhow4_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; OR [emotion4_v4] != &quot;None&quot; OR [emotion4_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v4___3" Name="emotionhow4_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; AND [emotion4_v4] != &quot;None&quot; AND [emotion4_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v4___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v4" Name="emotion5_v4" DataType="text" Length="999" redcap:Variable="emotion5_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; OR [emotion4_v4] != &quot;None&quot; OR [emotion4_v4] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v4" Name="emotion5_v4" DataType="text" Length="999" redcap:Variable="emotion5_v4" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v4] != &quot;&quot; AND [emotion4_v4] != &quot;None&quot; AND [emotion4_v4] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v4___1" Name="emotionhow5_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; OR [emotion5_v4] != &quot;None&quot; OR [emotion5_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v4___1" Name="emotionhow5_v4___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; AND [emotion5_v4] != &quot;None&quot; AND [emotion5_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v4___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v4___2" Name="emotionhow5_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; OR [emotion5_v4] != &quot;None&quot; OR [emotion5_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v4___2" Name="emotionhow5_v4___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; AND [emotion5_v4] != &quot;None&quot; AND [emotion5_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v4___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v4___3" Name="emotionhow5_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; OR [emotion5_v4] != &quot;None&quot; OR [emotion5_v4] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v4___3" Name="emotionhow5_v4___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v4" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v4] != &quot;&quot; AND [emotion5_v4] != &quot;None&quot; AND [emotion5_v4] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v4]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v4___3.choices"/>
 	</ItemDef>
@@ -1658,75 +1658,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v5" Name="emotion1_v5" DataType="text" Length="999" redcap:Variable="emotion1_v5" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v5___1" Name="emotionhow1_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; OR [emotion1_v5] != &quot;None&quot; OR [emotion1_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v5___1" Name="emotionhow1_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; AND [emotion1_v5] != &quot;None&quot; AND [emotion1_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v5___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v5___2" Name="emotionhow1_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; OR [emotion1_v5] != &quot;None&quot; OR [emotion1_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v5___2" Name="emotionhow1_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; AND [emotion1_v5] != &quot;None&quot; AND [emotion1_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v5___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v5___3" Name="emotionhow1_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; OR [emotion1_v5] != &quot;None&quot; OR [emotion1_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v5___3" Name="emotionhow1_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; AND [emotion1_v5] != &quot;None&quot; AND [emotion1_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v5___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v5" Name="emotion2_v5" DataType="text" Length="999" redcap:Variable="emotion2_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; OR [emotion1_v5] != &quot;None&quot; OR [emotion1_v5] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v5" Name="emotion2_v5" DataType="text" Length="999" redcap:Variable="emotion2_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v5] != &quot;&quot; AND [emotion1_v5] != &quot;None&quot; AND [emotion1_v5] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v5___1" Name="emotionhow2_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; OR [emotion2_v5] != &quot;None&quot; OR [emotion2_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v5___1" Name="emotionhow2_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; AND [emotion2_v5] != &quot;None&quot; AND [emotion2_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v5___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v5___2" Name="emotionhow2_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; OR [emotion2_v5] != &quot;None&quot; OR [emotion2_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v5___2" Name="emotionhow2_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; AND [emotion2_v5] != &quot;None&quot; AND [emotion2_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v5___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v5___3" Name="emotionhow2_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; OR [emotion2_v5] != &quot;None&quot; OR [emotion2_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v5___3" Name="emotionhow2_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; AND [emotion2_v5] != &quot;None&quot; AND [emotion2_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v5___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v5" Name="emotion3_v5" DataType="text" Length="999" redcap:Variable="emotion3_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; OR [emotion2_v5] != &quot;None&quot; OR [emotion2_v5] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v5" Name="emotion3_v5" DataType="text" Length="999" redcap:Variable="emotion3_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v5] != &quot;&quot; AND [emotion2_v5] != &quot;None&quot; AND [emotion2_v5] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v5___1" Name="emotionhow3_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; OR [emotion3_v5] != &quot;None&quot; OR [emotion3_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v5___1" Name="emotionhow3_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; AND [emotion3_v5] != &quot;None&quot; AND [emotion3_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v5___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v5___2" Name="emotionhow3_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; OR [emotion3_v5] != &quot;None&quot; OR [emotion3_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v5___2" Name="emotionhow3_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; AND [emotion3_v5] != &quot;None&quot; AND [emotion3_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v5___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v5___3" Name="emotionhow3_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; OR [emotion3_v5] != &quot;None&quot; OR [emotion3_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v5___3" Name="emotionhow3_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; AND [emotion3_v5] != &quot;None&quot; AND [emotion3_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v5___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v5" Name="emotion4_v5" DataType="text" Length="999" redcap:Variable="emotion4_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; OR [emotion3_v5] != &quot;None&quot; OR [emotion3_v5] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v5" Name="emotion4_v5" DataType="text" Length="999" redcap:Variable="emotion4_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v5] != &quot;&quot; AND [emotion3_v5] != &quot;None&quot; AND [emotion3_v5] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v5___1" Name="emotionhow4_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; OR [emotion4_v5] != &quot;None&quot; OR [emotion4_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v5___1" Name="emotionhow4_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; AND [emotion4_v5] != &quot;None&quot; AND [emotion4_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v5___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v5___2" Name="emotionhow4_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; OR [emotion4_v5] != &quot;None&quot; OR [emotion4_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v5___2" Name="emotionhow4_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; AND [emotion4_v5] != &quot;None&quot; AND [emotion4_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v5___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v5___3" Name="emotionhow4_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; OR [emotion4_v5] != &quot;None&quot; OR [emotion4_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v5___3" Name="emotionhow4_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; AND [emotion4_v5] != &quot;None&quot; AND [emotion4_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v5___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v5" Name="emotion5_v5" DataType="text" Length="999" redcap:Variable="emotion5_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; OR [emotion4_v5] != &quot;None&quot; OR [emotion4_v5] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v5" Name="emotion5_v5" DataType="text" Length="999" redcap:Variable="emotion5_v5" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v5] != &quot;&quot; AND [emotion4_v5] != &quot;None&quot; AND [emotion4_v5] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v5___1" Name="emotionhow5_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; OR [emotion5_v5] != &quot;None&quot; OR [emotion5_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v5___1" Name="emotionhow5_v5___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; AND [emotion5_v5] != &quot;None&quot; AND [emotion5_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v5___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v5___2" Name="emotionhow5_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; OR [emotion5_v5] != &quot;None&quot; OR [emotion5_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v5___2" Name="emotionhow5_v5___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; AND [emotion5_v5] != &quot;None&quot; AND [emotion5_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v5___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v5___3" Name="emotionhow5_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; OR [emotion5_v5] != &quot;None&quot; OR [emotion5_v5] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v5___3" Name="emotionhow5_v5___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v5" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v5] != &quot;&quot; AND [emotion5_v5] != &quot;None&quot; AND [emotion5_v5] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v5]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v5___3.choices"/>
 	</ItemDef>
@@ -1861,75 +1861,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v6" Name="emotion1_v6" DataType="text" Length="999" redcap:Variable="emotion1_v6" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v6___1" Name="emotionhow1_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; OR [emotion1_v6] != &quot;None&quot; OR [emotion1_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v6___1" Name="emotionhow1_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; AND [emotion1_v6] != &quot;None&quot; AND [emotion1_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v6___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v6___2" Name="emotionhow1_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; OR [emotion1_v6] != &quot;None&quot; OR [emotion1_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v6___2" Name="emotionhow1_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; AND [emotion1_v6] != &quot;None&quot; AND [emotion1_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v6___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v6___3" Name="emotionhow1_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; OR [emotion1_v6] != &quot;None&quot; OR [emotion1_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v6___3" Name="emotionhow1_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; AND [emotion1_v6] != &quot;None&quot; AND [emotion1_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v6___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v6" Name="emotion2_v6" DataType="text" Length="999" redcap:Variable="emotion2_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; OR [emotion1_v6] != &quot;None&quot; OR [emotion1_v6] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v6" Name="emotion2_v6" DataType="text" Length="999" redcap:Variable="emotion2_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v6] != &quot;&quot; AND [emotion1_v6] != &quot;None&quot; AND [emotion1_v6] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v6___1" Name="emotionhow2_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; OR [emotion2_v6] != &quot;None&quot; OR [emotion2_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v6___1" Name="emotionhow2_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; AND [emotion2_v6] != &quot;None&quot; AND [emotion2_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v6___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v6___2" Name="emotionhow2_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; OR [emotion2_v6] != &quot;None&quot; OR [emotion2_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v6___2" Name="emotionhow2_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; AND [emotion2_v6] != &quot;None&quot; AND [emotion2_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v6___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v6___3" Name="emotionhow2_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; OR [emotion2_v6] != &quot;None&quot; OR [emotion2_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v6___3" Name="emotionhow2_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; AND [emotion2_v6] != &quot;None&quot; AND [emotion2_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v6___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v6" Name="emotion3_v6" DataType="text" Length="999" redcap:Variable="emotion3_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; OR [emotion2_v6] != &quot;None&quot; OR [emotion2_v6] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v6" Name="emotion3_v6" DataType="text" Length="999" redcap:Variable="emotion3_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v6] != &quot;&quot; AND [emotion2_v6] != &quot;None&quot; AND [emotion2_v6] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v6___1" Name="emotionhow3_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; OR [emotion3_v6] != &quot;None&quot; OR [emotion3_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v6___1" Name="emotionhow3_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; AND [emotion3_v6] != &quot;None&quot; AND [emotion3_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v6___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v6___2" Name="emotionhow3_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; OR [emotion3_v6] != &quot;None&quot; OR [emotion3_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v6___2" Name="emotionhow3_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; AND [emotion3_v6] != &quot;None&quot; AND [emotion3_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v6___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v6___3" Name="emotionhow3_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; OR [emotion3_v6] != &quot;None&quot; OR [emotion3_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v6___3" Name="emotionhow3_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; AND [emotion3_v6] != &quot;None&quot; AND [emotion3_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v6___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v6" Name="emotion4_v6" DataType="text" Length="999" redcap:Variable="emotion4_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; OR [emotion3_v6] != &quot;None&quot; OR [emotion3_v6] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v6" Name="emotion4_v6" DataType="text" Length="999" redcap:Variable="emotion4_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v6] != &quot;&quot; AND [emotion3_v6] != &quot;None&quot; AND [emotion3_v6] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v6___1" Name="emotionhow4_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; OR [emotion4_v6] != &quot;None&quot; OR [emotion4_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v6___1" Name="emotionhow4_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; AND [emotion4_v6] != &quot;None&quot; AND [emotion4_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v6___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v6___2" Name="emotionhow4_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; OR [emotion4_v6] != &quot;None&quot; OR [emotion4_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v6___2" Name="emotionhow4_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; AND [emotion4_v6] != &quot;None&quot; AND [emotion4_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v6___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v6___3" Name="emotionhow4_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; OR [emotion4_v6] != &quot;None&quot; OR [emotion4_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v6___3" Name="emotionhow4_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; AND [emotion4_v6] != &quot;None&quot; AND [emotion4_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v6___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v6" Name="emotion5_v6" DataType="text" Length="999" redcap:Variable="emotion5_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; OR [emotion4_v6] != &quot;None&quot; OR [emotion4_v6] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v6" Name="emotion5_v6" DataType="text" Length="999" redcap:Variable="emotion5_v6" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v6] != &quot;&quot; AND [emotion4_v6] != &quot;None&quot; AND [emotion4_v6] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v6___1" Name="emotionhow5_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; OR [emotion5_v6] != &quot;None&quot; OR [emotion5_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v6___1" Name="emotionhow5_v6___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; AND [emotion5_v6] != &quot;None&quot; AND [emotion5_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v6___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v6___2" Name="emotionhow5_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; OR [emotion5_v6] != &quot;None&quot; OR [emotion5_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v6___2" Name="emotionhow5_v6___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; AND [emotion5_v6] != &quot;None&quot; AND [emotion5_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v6___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v6___3" Name="emotionhow5_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; OR [emotion5_v6] != &quot;None&quot; OR [emotion5_v6] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v6___3" Name="emotionhow5_v6___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v6" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v6] != &quot;&quot; AND [emotion5_v6] != &quot;None&quot; AND [emotion5_v6] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v6]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v6___3.choices"/>
 	</ItemDef>
@@ -2061,75 +2061,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v7" Name="emotion1_v7" DataType="text" Length="999" redcap:Variable="emotion1_v7" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v7___1" Name="emotionhow1_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; OR [emotion1_v7] != &quot;None&quot; OR [emotion1_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v7___1" Name="emotionhow1_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; AND [emotion1_v7] != &quot;None&quot; AND [emotion1_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v7___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v7___2" Name="emotionhow1_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; OR [emotion1_v7] != &quot;None&quot; OR [emotion1_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v7___2" Name="emotionhow1_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; AND [emotion1_v7] != &quot;None&quot; AND [emotion1_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v7___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v7___3" Name="emotionhow1_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; OR [emotion1_v7] != &quot;None&quot; OR [emotion1_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v7___3" Name="emotionhow1_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; AND [emotion1_v7] != &quot;None&quot; AND [emotion1_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v7___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v7" Name="emotion2_v7" DataType="text" Length="999" redcap:Variable="emotion2_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; OR [emotion1_v7] != &quot;None&quot; OR [emotion1_v7] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v7" Name="emotion2_v7" DataType="text" Length="999" redcap:Variable="emotion2_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v7] != &quot;&quot; AND [emotion1_v7] != &quot;None&quot; AND [emotion1_v7] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v7___1" Name="emotionhow2_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; OR [emotion2_v7] != &quot;None&quot; OR [emotion2_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v7___1" Name="emotionhow2_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; AND [emotion2_v7] != &quot;None&quot; AND [emotion2_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v7___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v7___2" Name="emotionhow2_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; OR [emotion2_v7] != &quot;None&quot; OR [emotion2_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v7___2" Name="emotionhow2_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; AND [emotion2_v7] != &quot;None&quot; AND [emotion2_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v7___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v7___3" Name="emotionhow2_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; OR [emotion2_v7] != &quot;None&quot; OR [emotion2_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v7___3" Name="emotionhow2_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; AND [emotion2_v7] != &quot;None&quot; AND [emotion2_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v7___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v7" Name="emotion3_v7" DataType="text" Length="999" redcap:Variable="emotion3_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; OR [emotion2_v7] != &quot;None&quot; OR [emotion2_v7] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v7" Name="emotion3_v7" DataType="text" Length="999" redcap:Variable="emotion3_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v7] != &quot;&quot; AND [emotion2_v7] != &quot;None&quot; AND [emotion2_v7] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v7___1" Name="emotionhow3_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; OR [emotion3_v7] != &quot;None&quot; OR [emotion3_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v7___1" Name="emotionhow3_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; AND [emotion3_v7] != &quot;None&quot; AND [emotion3_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v7___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v7___2" Name="emotionhow3_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; OR [emotion3_v7] != &quot;None&quot; OR [emotion3_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v7___2" Name="emotionhow3_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; AND [emotion3_v7] != &quot;None&quot; AND [emotion3_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v7___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v7___3" Name="emotionhow3_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; OR [emotion3_v7] != &quot;None&quot; OR [emotion3_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v7___3" Name="emotionhow3_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; AND [emotion3_v7] != &quot;None&quot; AND [emotion3_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v7___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v7" Name="emotion4_v7" DataType="text" Length="999" redcap:Variable="emotion4_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; OR [emotion3_v7] != &quot;None&quot; OR [emotion3_v7] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v7" Name="emotion4_v7" DataType="text" Length="999" redcap:Variable="emotion4_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v7] != &quot;&quot; AND [emotion3_v7] != &quot;None&quot; AND [emotion3_v7] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v7___1" Name="emotionhow4_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; OR [emotion4_v7] != &quot;None&quot; OR [emotion4_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v7___1" Name="emotionhow4_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; AND [emotion4_v7] != &quot;None&quot; AND [emotion4_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v7___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v7___2" Name="emotionhow4_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; OR [emotion4_v7] != &quot;None&quot; OR [emotion4_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v7___2" Name="emotionhow4_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; AND [emotion4_v7] != &quot;None&quot; AND [emotion4_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v7___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v7___3" Name="emotionhow4_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; OR [emotion4_v7] != &quot;None&quot; OR [emotion4_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v7___3" Name="emotionhow4_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; AND [emotion4_v7] != &quot;None&quot; AND [emotion4_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v7___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v7" Name="emotion5_v7" DataType="text" Length="999" redcap:Variable="emotion5_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; OR [emotion4_v7] != &quot;None&quot; OR [emotion4_v7] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v7" Name="emotion5_v7" DataType="text" Length="999" redcap:Variable="emotion5_v7" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v7] != &quot;&quot; AND [emotion4_v7] != &quot;None&quot; AND [emotion4_v7] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v7___1" Name="emotionhow5_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; OR [emotion5_v7] != &quot;None&quot; OR [emotion5_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v7___1" Name="emotionhow5_v7___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; AND [emotion5_v7] != &quot;None&quot; AND [emotion5_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v7___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v7___2" Name="emotionhow5_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; OR [emotion5_v7] != &quot;None&quot; OR [emotion5_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v7___2" Name="emotionhow5_v7___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; AND [emotion5_v7] != &quot;None&quot; AND [emotion5_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v7___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v7___3" Name="emotionhow5_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; OR [emotion5_v7] != &quot;None&quot; OR [emotion5_v7] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v7___3" Name="emotionhow5_v7___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v7" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v7] != &quot;&quot; AND [emotion5_v7] != &quot;None&quot; AND [emotion5_v7] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v7]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v7___3.choices"/>
 	</ItemDef>
@@ -2258,75 +2258,75 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	<ItemDef OID="emotion1_v8" Name="emotion1_v8" DataType="text" Length="999" redcap:Variable="emotion1_v8" redcap:FieldType="text" redcap:RequiredField="y">
 		<Question><TranslatedText>Insight Here</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v8___1" Name="emotionhow1_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; OR [emotion1_v8] != &quot;None&quot; OR [emotion1_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v8___1" Name="emotionhow1_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; AND [emotion1_v8] != &quot;None&quot; AND [emotion1_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v8___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v8___2" Name="emotionhow1_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; OR [emotion1_v8] != &quot;None&quot; OR [emotion1_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v8___2" Name="emotionhow1_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; AND [emotion1_v8] != &quot;None&quot; AND [emotion1_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v8___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow1_v8___3" Name="emotionhow1_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; OR [emotion1_v8] != &quot;None&quot; OR [emotion1_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow1_v8___3" Name="emotionhow1_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow1_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; AND [emotion1_v8] != &quot;None&quot; AND [emotion1_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion1_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow1_v8___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion2_v8" Name="emotion2_v8" DataType="text" Length="999" redcap:Variable="emotion2_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; OR [emotion1_v8] != &quot;None&quot; OR [emotion1_v8] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion2_v8" Name="emotion2_v8" DataType="text" Length="999" redcap:Variable="emotion2_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion1_v8] != &quot;&quot; AND [emotion1_v8] != &quot;None&quot; AND [emotion1_v8] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v8___1" Name="emotionhow2_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; OR [emotion2_v8] != &quot;None&quot; OR [emotion2_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v8___1" Name="emotionhow2_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; AND [emotion2_v8] != &quot;None&quot; AND [emotion2_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v8___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v8___2" Name="emotionhow2_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; OR [emotion2_v8] != &quot;None&quot; OR [emotion2_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v8___2" Name="emotionhow2_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; AND [emotion2_v8] != &quot;None&quot; AND [emotion2_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v8___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow2_v8___3" Name="emotionhow2_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; OR [emotion2_v8] != &quot;None&quot; OR [emotion2_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow2_v8___3" Name="emotionhow2_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow2_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; AND [emotion2_v8] != &quot;None&quot; AND [emotion2_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion2_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow2_v8___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion3_v8" Name="emotion3_v8" DataType="text" Length="999" redcap:Variable="emotion3_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; OR [emotion2_v8] != &quot;None&quot; OR [emotion2_v8] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion3_v8" Name="emotion3_v8" DataType="text" Length="999" redcap:Variable="emotion3_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion2_v8] != &quot;&quot; AND [emotion2_v8] != &quot;None&quot; AND [emotion2_v8] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v8___1" Name="emotionhow3_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; OR [emotion3_v8] != &quot;None&quot; OR [emotion3_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v8___1" Name="emotionhow3_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; AND [emotion3_v8] != &quot;None&quot; AND [emotion3_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v8___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v8___2" Name="emotionhow3_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; OR [emotion3_v8] != &quot;None&quot; OR [emotion3_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v8___2" Name="emotionhow3_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; AND [emotion3_v8] != &quot;None&quot; AND [emotion3_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v8___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow3_v8___3" Name="emotionhow3_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; OR [emotion3_v8] != &quot;None&quot; OR [emotion3_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow3_v8___3" Name="emotionhow3_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow3_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; AND [emotion3_v8] != &quot;None&quot; AND [emotion3_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion3_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow3_v8___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion4_v8" Name="emotion4_v8" DataType="text" Length="999" redcap:Variable="emotion4_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; OR [emotion3_v8] != &quot;None&quot; OR [emotion3_v8] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion4_v8" Name="emotion4_v8" DataType="text" Length="999" redcap:Variable="emotion4_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion3_v8] != &quot;&quot; AND [emotion3_v8] != &quot;None&quot; AND [emotion3_v8] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v8___1" Name="emotionhow4_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; OR [emotion4_v8] != &quot;None&quot; OR [emotion4_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v8___1" Name="emotionhow4_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; AND [emotion4_v8] != &quot;None&quot; AND [emotion4_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v8___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v8___2" Name="emotionhow4_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; OR [emotion4_v8] != &quot;None&quot; OR [emotion4_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v8___2" Name="emotionhow4_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; AND [emotion4_v8] != &quot;None&quot; AND [emotion4_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v8___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow4_v8___3" Name="emotionhow4_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; OR [emotion4_v8] != &quot;None&quot; OR [emotion4_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow4_v8___3" Name="emotionhow4_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow4_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; AND [emotion4_v8] != &quot;None&quot; AND [emotion4_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion4_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow4_v8___3.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotion5_v8" Name="emotion5_v8" DataType="text" Length="999" redcap:Variable="emotion5_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; OR [emotion4_v8] != &quot;None&quot; OR [emotion4_v8] != &quot;none&quot;">
-		<Question><TranslatedText>Insight Here</TranslatedText></Question>
+	<ItemDef OID="emotion5_v8" Name="emotion5_v8" DataType="text" Length="999" redcap:Variable="emotion5_v8" redcap:FieldType="text" redcap:BranchingLogic="[emotion4_v8] != &quot;&quot; AND [emotion4_v8] != &quot;None&quot; AND [emotion4_v8] != &quot;none&quot;">
+		<Question><TranslatedText>Next Insight Here (optional)</TranslatedText></Question>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v8___1" Name="emotionhow5_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; OR [emotion5_v8] != &quot;None&quot; OR [emotion5_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v8___1" Name="emotionhow5_v8___1" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; AND [emotion5_v8] != &quot;None&quot; AND [emotion5_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v8___1.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v8___2" Name="emotionhow5_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; OR [emotion5_v8] != &quot;None&quot; OR [emotion5_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v8___2" Name="emotionhow5_v8___2" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; AND [emotion5_v8] != &quot;None&quot; AND [emotion5_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v8___2.choices"/>
 	</ItemDef>
-	<ItemDef OID="emotionhow5_v8___3" Name="emotionhow5_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; OR [emotion5_v8] != &quot;None&quot; OR [emotion5_v8] != &quot;none&quot;">
+	<ItemDef OID="emotionhow5_v8___3" Name="emotionhow5_v8___3" DataType="boolean" Length="1" redcap:Variable="emotionhow5_v8" redcap:FieldType="checkbox" redcap:RequiredField="y" redcap:BranchingLogic="[emotion5_v8] != &quot;&quot; AND [emotion5_v8] != &quot;None&quot; AND [emotion5_v8] != &quot;none&quot;">
 		<Question><TranslatedText>[emotion5_v8]</TranslatedText></Question>
 		<CodeListRef CodeListOID="emotionhow5_v8___3.choices"/>
 	</ItemDef>
@@ -3604,6 +3604,6 @@ Once the video is complete, click &quot;Next page&quot; to continue the survey.<
 	</CodeList>
 </MetaDataVersion>
 </Study>
-<ClinicalData StudyOID="Project.CLIPSSurveyREDCapCon" MetaDataVersionOID="Metadata.CLIPSSurveyREDCapCon_2024-07-23_0055">
+<ClinicalData StudyOID="Project.CLIPSSurveyREDCapCon" MetaDataVersionOID="Metadata.CLIPSSurveyREDCapCon_2024-08-07_0235">
 </ClinicalData>
 </ODM>

@@ -1,5 +1,8 @@
 # CLIPS - Crowdsourcing Likely Insights from Patient Encounter Snippets
 
+## Live Example
+> Explore a live example of the survey featured in this repository [here](https://redcap.med.upenn.edu/surveys/?s=73N9R8PH4N3MEW4H&video_1=https://upenn.box.com/s/ninyxkukphe79m2urbwmw4wtzzsa3h4z&video_2=https://upenn.box.com/s/4z0b3r7g3yja1z8eg8rs2vkza60ztsqi&video_3=https://upenn.box.com/s/5chq6x32kp4i9fyhjbqxhfe55bp3edia&sp=7248391052).
+
 ## Introduction
 The CLIPS project is part of the REDUCE (Reimagining Documentation Using Computation from Clinical Encounters) initiative, which aims to leverage multi-modal data from clinical encounters to enhance clinical documentation. CLIPS focuses on gathering insights from clinical encounter videos through crowdsourcing. This repository is set up to distribute your repository of videos into two one-minute halves for this purpose.
 
@@ -71,6 +74,10 @@ cd CLIPS
 4. Host the CSV file in an AWS S3 bucket with accessible permissions from your Lambda function.
 
 5. Deploy AWS Lambda Functions for URL Redirect: [aws_lambda_function.py](https://github.com/kbjohnson-penn/CLIPS/blob/main/4%20-%20AWS%20Backend/aws_lambda_function.py)
+
+## Cite as
+
+Alasaly B, Jang KJ, Mopidevi S, Johnson KB. CLIPS - Crowdsourcing Likely Insights from Patient Encounter Snippets. Poster presented at: REDCapCon; September 9, 2024; St. Petersburg, Florida. DOI: [10.13140/RG.2.2.10338.54723](https://doi.org/10.13140/RG.2.2.10338.54723).
 
 ## Contributing
 
